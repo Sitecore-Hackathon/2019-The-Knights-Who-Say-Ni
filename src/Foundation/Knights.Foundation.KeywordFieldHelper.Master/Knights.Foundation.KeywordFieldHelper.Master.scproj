@@ -6,12 +6,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d7528e9b-f375-4a55-97d1-c5853a6a6d43</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <SourceWebPhysicalPath>
-    </SourceWebPhysicalPath>
-    <SourceWebProject>
-    </SourceWebProject>
-    <SourceWebVirtualPath>
-    </SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
     <UseMerge>true</UseMerge>
@@ -29,6 +23,12 @@
     <BaseNamespace>Knights.Foundation.KeywordFieldHelper.SCModels</BaseNamespace>
     <BaseTransformFile />
     <HeaderTransformFile />
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <AssemblyStatus>Include</AssemblyStatus>
+    <SourceWebVirtualPath>/Knights.Foundation.KeywordFieldHelper.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{b6e9a820-dbbc-48ef-9f9b-a4afe987fe56}|src\Foundation\Knights.Foundation.KeywordFieldHelper\Knights.Foundation.KeywordFieldHelper.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\Knights.Foundation.KeywordFieldHelper</SourceWebPhysicalPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,11 +45,13 @@
     <PackagePublisher>The Knight Who Say Ni!</PackagePublisher>
     <PackageVersion>1.0.0.0</PackageVersion>
     <PackageReadme />
-    <SitecoreAssemblyPath />
+    <SitecoreAssemblyPath>$(SolutionDir)/lib</SitecoreAssemblyPath>
     <GeneratePackage>True</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Knights.Foundation.KeywordFieldHelper.Master_Debug.xml</ValidationSettingsFilePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -93,6 +95,20 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\Knights.Foundation.KeywordFieldHelper.Core\Knights.Foundation.KeywordFieldHelper.Core.scproj">
+      <ProjectId>{7e7f4234-5f1e-4374-8418-97819f47cabf}</ProjectId>
+    </BundledProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Knights.Foundation.KeywordFieldHelper\Knights.Foundation.KeywordFieldHelper.csproj">
+      <Project>{b6e9a820-dbbc-48ef-9f9b-a4afe987fe56}</Project>
+      <Name>Knights.Foundation.KeywordFieldHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Knights.%2a.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

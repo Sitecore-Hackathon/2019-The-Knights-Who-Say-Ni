@@ -34,9 +34,8 @@
     <PackagePublisher>The Knight Who Say Ni!</PackagePublisher>
     <PackageVersion>1.0.0.0</PackageVersion>
     <PackageReadme />
-    <SitecoreAssemblyPath>
-    </SitecoreAssemblyPath>
-    <GeneratePackage>True</GeneratePackage>
+    <SitecoreAssemblyPath>$(SolutionDir)/lib</SitecoreAssemblyPath>
+    <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>True</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
