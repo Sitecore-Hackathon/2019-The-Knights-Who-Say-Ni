@@ -16,8 +16,6 @@ This is a custom text field which provides Sitecore content managers and markete
 
 ## Installation
 
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
-
 1. Use the Sitecore Installation Wizard to install the [KeywordFieldHelper package](https://github.com/Sitecore-Hackathon/2019-The-Knights-Who-Say-Ni/blob/master/sc.package/Knights.Foundation.KeywordFieldHelper.Master.update)
 
 
@@ -75,10 +73,6 @@ If you would like implement your own keywords suggestions provider or keywords r
 ```
 
 ## Usage
-
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
-
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
 
 1. First you need to go to Sitecore Update Wizard and install the package.
 
