@@ -113,7 +113,7 @@ function initKeywordHelperField(el) {
     var options = {
         url: function (phrase) {
             if (phrase !== "") {
-                phrase = phrase.replace(/[^a-zA-Z ]/g, "");
+                phrase = phrase.replace(/[^a-zA-Z0-9 ]/g, "");
                 return "/keywords/get/" + phrase;
             }
             return null;
