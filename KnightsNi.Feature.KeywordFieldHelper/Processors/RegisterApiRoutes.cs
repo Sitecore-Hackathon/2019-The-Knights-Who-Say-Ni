@@ -20,6 +20,7 @@ namespace Knights.Feature.KeywordFieldHelper.Processors
 
                 //register MVC/AJAX route(s)
                 routes.MapRoute("Keywords", "Keywords/Get/{id}", new { controller = "Keywords", action = "Get", id = UrlParameter.Optional });
+                routes.MapRoute("KeywordsRanksLabels", "Keywords/GetLabels", new { controller = "Keywords", action = "GetLabels"});
             }
         }
     }

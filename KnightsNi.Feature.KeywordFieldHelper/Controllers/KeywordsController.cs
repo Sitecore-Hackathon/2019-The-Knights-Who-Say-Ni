@@ -27,16 +27,32 @@ namespace Knights.Feature.KeywordFieldHelper.Controllers
 
         public ActionResult Get(string id)
         {
-            var viewModel = new KeywordsResponseViewModel()
-            {
-                Keywords = _keywordHelperService.GetRankedSuggestions(id).ToList(),
-                VolumeLabel = Sitecore.Globalization.Translate.Text("KeywordFieldHelper.Volume.Label"),
-                CpcLabel = Sitecore.Globalization.Translate.Text("KeywordFieldHelper.CPC.Label"),
-                CompetitionLabel = Sitecore.Globalization.Translate.Text("KeywordFieldHelper.Competition.Label"),
-            };
+            var viewModel = GetViewModel();
+            viewModel.Keywords = _keywordHelperService.GetRankedSuggestions(id).ToList();
+            return Json(viewModel, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult GetLabels()
+        {
+            var viewModel = GetViewModel();
             return Json(viewModel, JsonRequestBehavior.AllowGet);
         }
 
         #endregion
+
+        #region Private members
+
+        private KeywordsResponseViewModel GetViewModel()
+        {
+            return new KeywordsResponseViewModel()
+            {
+                VolumeLabel = Sitecore.Globalization.Translate.Text("KeywordFieldHelper.Volume.Label"),
+                CpcLabel = Sitecore.Globalization.Translate.Text("KeywordFieldHelper.CPC.Label"),
+                CompetitionLabel = Sitecore.Globalization.Translate.Text("KeywordFieldHelper.Competition.Label"),
+            };
+        }
+
+        #endregion
+
     }
 }
