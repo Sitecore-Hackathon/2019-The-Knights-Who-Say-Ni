@@ -7,7 +7,7 @@ namespace Knights.Feature.KeywordFieldHelper.Models
     {
         [JsonProperty("volume")] public int Volume { get; set; }
 
-        [JsonProperty("costPerClick")] public decimal CostPerClick { get; set; }
+        [JsonProperty("costPerClick")] public string CostPerClick { get; set; }
 
         [JsonProperty("competition")] public double Competition { get; set; }
 

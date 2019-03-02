@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -133,7 +134,7 @@ namespace Knights.Feature.KeywordFieldHelper.Services
         protected virtual void CopyRankedData([NotNull] RankedKeyword keyword, [NotNull] KeywordsEverywhereResponseItem item)
         {
             if (int.TryParse(item.Vol, out var volume)) keyword.Volume = volume;
-            if (decimal.TryParse(item.Cpc, out var cpc)) keyword.CostPerClick = cpc;
+            keyword.CostPerClick = item.Cpc;
             if (double.TryParse(item.Competition, out var competition)) keyword.Competition = competition;
         }
 
