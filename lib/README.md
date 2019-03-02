@@ -1,9 +1,12 @@
 # Lib
 
-Please use Nuget reference where the package is available. If certain DLLs are not available then please provide a list of the the files that should be placed into this directory, for example:
+This folder contains files, which TDS is using to generate Sitecore update packages:
 
-- Library.Name.dll
-- Library.Other.File.dll
-- Library.License.xml
-
-Do not include files which are subject to any licensing or distribution restrictions.
+- Sitecore.Kernel.dll
+- Sitecore.Kernel.xml
+- Sitecore.Logging.dll
+- Sitecore.Logging.xml
+- Sitecore.Update.dll
+- Sitecore.Update.xml
+- Sitecore.Zip.dll
+- Sitecore.Zip.xml

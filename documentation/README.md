@@ -32,6 +32,26 @@ Enter your Keywords Everywhere API key in the "App_Config/Include/Feature/Keywor
    
         <!-- You can get free API key here: https://keywordseverywhere.com/first-install-addon.html -->
         <setting name="KeywordsEverywhere.Api.Key" value="[YOUR_KEY_GOES_HERE]" />
+        
+        <!--
+            Leave it empty for global ranking.
+             
+            Australia:      au
+            Canada:         ca
+            India:          in
+            New Zealand:    nz
+            South Africa:   za
+            United Kingdom: uk
+            United States:  us
+        -->
+        <setting name="KeywordsEverywhere.Api.Country" value="" />
+
+        <!--
+            Leave it empty for US dollar (by default). 
+            Otherwise provide 3 letter ISO currency code lowercase.
+            For example: eur, cad, gbp
+        -->
+        <setting name="KeywordsEverywhere.Api.Currency" value="" />
     </settings>
 </sitecore>
 ```
