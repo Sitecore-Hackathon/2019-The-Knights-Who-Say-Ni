@@ -39,7 +39,7 @@
     <DisableFileDeployment>True</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
     <SitecoreDeployFolder>C:\inetpub\wwwroot\sitecore9.sc</SitecoreDeployFolder>
-    <SitecoreAccessGuid>5097444a-98c0-4878-bceb-770fe786937e</SitecoreAccessGuid>
+    <SitecoreAccessGuid>00284856-8faf-425e-8782-78753dc23907</SitecoreAccessGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
