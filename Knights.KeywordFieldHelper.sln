@@ -31,11 +31,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83
 		..\..\temp\we-are-the-knights-who-say-ni.png = ..\..\temp\we-are-the-knights-who-say-ni.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knights.Foundation.KeywordFieldHelper", "KnightsNi.Feature.KeywordFieldHelper\Knights.Foundation.KeywordFieldHelper.csproj", "{B6E9A820-DBBC-48EF-9F9B-A4AFE987FE56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knights.Foundation.KeywordFieldHelper", "src\Foundation\Knights.Foundation.KeywordFieldHelper\Knights.Foundation.KeywordFieldHelper.csproj", "{B6E9A820-DBBC-48EF-9F9B-A4AFE987FE56}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Knights.Foundation.KeywordFieldHelper.Master", "src\Foundation\Knights.Fondation.KeywordFieldHelper.master\Knights.Foundation.KeywordFieldHelper.Master.scproj", "{D7528E9B-F375-4A55-97D1-C5853A6A6D43}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Knights.Foundation.KeywordFieldHelper.Master", "src\Foundation\Knights.Foundation.KeywordFieldHelper.Master\Knights.Foundation.KeywordFieldHelper.Master.scproj", "{D7528E9B-F375-4A55-97D1-C5853A6A6D43}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Knights.Foundation.KeywordFieldHelper.core", "Knights.Foundation.KeywordFieldHelper.core\Knights.Foundation.KeywordFieldHelper.Core.scproj", "{7E7F4234-5F1E-4374-8418-97819F47CABF}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Knights.Foundation.KeywordFieldHelper.core", "src\Foundation\Knights.Foundation.KeywordFieldHelper.Core\Knights.Foundation.KeywordFieldHelper.Core.scproj", "{7E7F4234-5F1E-4374-8418-97819F47CABF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
