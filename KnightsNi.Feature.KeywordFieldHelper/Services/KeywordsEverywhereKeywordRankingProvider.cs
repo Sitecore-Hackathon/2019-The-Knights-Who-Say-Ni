@@ -48,9 +48,7 @@ namespace Knights.Feature.KeywordFieldHelper.Services
                     if (!string.IsNullOrWhiteSpace(response.Alert))
                         Log.Warn($"Got an alert({response.Alert}) while was ranking '{keyword}'.", this);
 
-                    CopyRankedData(rankedKeyword,
-                        response.Data?.SingleOrDefault(x =>
-                            x.Keyword.Equals(keyword, StringComparison.InvariantCultureIgnoreCase)));
+                    CopyRankedData(rankedKeyword, response.Data?.SingleOrDefault(x => x.Value.Keyword.Equals(keyword, StringComparison.InvariantCultureIgnoreCase)).Value);
                 }
             }
             catch (Exception e)
@@ -97,7 +95,7 @@ namespace Knights.Feature.KeywordFieldHelper.Services
                     foreach (var rankedKeyword in rankedKeywords)
                         CopyRankedData(rankedKeyword,
                             response.Data?.SingleOrDefault(x =>
-                                x.Keyword.Equals(rankedKeyword.Text, StringComparison.InvariantCultureIgnoreCase)));
+                                x.Value.Keyword.Equals(rankedKeyword.Text, StringComparison.InvariantCultureIgnoreCase)).Value);
                 }
             }
             catch (Exception e)

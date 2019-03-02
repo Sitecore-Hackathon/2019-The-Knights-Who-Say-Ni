@@ -12,7 +12,7 @@ namespace Knights.Feature.KeywordFieldHelper.Models
 
         [JsonProperty("banner")] public string Banner { get; set; }
 
-        [JsonProperty("data")] public List<KeywordsEverywhereResponseItem> Data { get; set; }
+        [JsonProperty("data")] public Dictionary<string, KeywordsEverywhereResponseItem> Data { get; set; }
 
         [JsonProperty("time")] public long Time { get; set; }
     }
