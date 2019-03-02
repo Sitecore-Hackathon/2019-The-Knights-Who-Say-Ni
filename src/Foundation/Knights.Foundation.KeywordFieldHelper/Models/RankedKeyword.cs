@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Knights.Foundation.KeywordFieldHelper.Models;
+using Newtonsoft.Json;
 
 namespace Knights.Feature.KeywordFieldHelper.Models
 {

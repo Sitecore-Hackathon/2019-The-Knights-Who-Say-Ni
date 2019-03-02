@@ -40,6 +40,16 @@
     <LightningDeployMode>False</LightningDeployMode>
     <SitecoreDeployFolder>C:\inetpub\wwwroot\sitecore9.sc</SitecoreDeployFolder>
     <SitecoreAccessGuid>00284856-8faf-425e-8782-78753dc23907</SitecoreAccessGuid>
+    <PackageName>Knights.Foundation.KeywordFieldHelper.Master</PackageName>
+    <PackageAuthor>Dennis Augustine, Min Jae Kim, Alexander Kay</PackageAuthor>
+    <PackagePublisher>The Knight Who Say Ni!</PackagePublisher>
+    <PackageVersion>1.0.0.0</PackageVersion>
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>

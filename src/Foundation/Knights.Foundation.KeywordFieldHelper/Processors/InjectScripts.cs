@@ -5,7 +5,7 @@ using Sitecore.Diagnostics;
 using Sitecore.Pipelines;
 using Sitecore.StringExtensions;
 
-namespace Knights.Feature.KeywordFieldHelper.Processors
+namespace Knights.Foundation.KeywordFieldHelper.Processors
 {
     public class InjectScripts
     {

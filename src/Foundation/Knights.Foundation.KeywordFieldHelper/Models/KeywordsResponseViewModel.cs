@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using Knights.Feature.KeywordFieldHelper.Models;
 using Newtonsoft.Json;
 
-namespace Knights.Feature.KeywordFieldHelper.Models
+namespace Knights.Foundation.KeywordFieldHelper.Models
 {
     [JsonObject]
     public class KeywordsResponseViewModel

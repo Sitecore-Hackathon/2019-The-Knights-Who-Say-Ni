@@ -7,7 +7,7 @@ using Sitecore;
 using Sitecore.Configuration;
 using Sitecore.Diagnostics;
 
-namespace Knights.Feature.KeywordFieldHelper.Services
+namespace Knights.Foundation.KeywordFieldHelper.Services
 {
     public class GoogleKeywordSuggestionsProvider : IKeywordSuggestionsProvider
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Knights.Feature.KeywordFieldHelper.Services
+namespace Knights.Foundation.KeywordFieldHelper.Services
 {
     public interface IKeywordSuggestionsProvider
     {

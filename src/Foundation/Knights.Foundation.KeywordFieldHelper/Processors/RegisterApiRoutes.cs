@@ -2,7 +2,7 @@
 using System.Web.Routing;
 using Sitecore.Pipelines;
 
-namespace Knights.Feature.KeywordFieldHelper.Processors
+namespace Knights.Foundation.KeywordFieldHelper.Processors
 {
     public class RegisterApiRoutes
     {
@@ -19,11 +19,11 @@ namespace Knights.Feature.KeywordFieldHelper.Processors
                 routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
                 //register MVC/AJAX route(s)
-                routes.MapRoute("Keywords", "Keywords/Get/{id}",
+                routes.MapRoute("Keywords", "Api/Keywords/Get/{id}",
                     new {controller = "Keywords", action = "Get", id = UrlParameter.Optional});
-                routes.MapRoute("KeywordsRanksLabels", "Keywords/GetLabels",
+                routes.MapRoute("KeywordsRanksLabels", "Api/Keywords/GetLabels",
                     new {controller = "Keywords", action = "GetLabels"});
-                routes.MapRoute("KeywordsRank", "Keywords/Rank/{id}",
+                routes.MapRoute("KeywordsRank", "Api/Keywords/Rank/{id}",
                     new {controller = "Keywords", action = "Rank", id = UrlParameter.Optional});
             }
         }

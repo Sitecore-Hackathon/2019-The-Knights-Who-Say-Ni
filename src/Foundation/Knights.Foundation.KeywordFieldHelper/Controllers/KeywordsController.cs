@@ -2,11 +2,12 @@
 using System.Linq;
 using System.Web.Mvc;
 using Knights.Feature.KeywordFieldHelper.Models;
-using Knights.Feature.KeywordFieldHelper.Services;
+using Knights.Foundation.KeywordFieldHelper.Models;
+using Knights.Foundation.KeywordFieldHelper.Services;
 using Sitecore.Globalization;
 using Sitecore.Mvc.Controllers;
 
-namespace Knights.Feature.KeywordFieldHelper.Controllers
+namespace Knights.Foundation.KeywordFieldHelper.Controllers
 {
     public class KeywordsController : SitecoreController
     {

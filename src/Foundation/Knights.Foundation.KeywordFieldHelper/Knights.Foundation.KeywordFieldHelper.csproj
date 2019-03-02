@@ -235,7 +235,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Knights.Feature.KeywordFieldHelper.config" />
+    <Content Include="App_Config\Include\Foundation\KeywordHelper\Knights.Foundation.KeywordFieldHelper.config" />
     <Content Include="sitecore modules\EasyAutocomplete\easy-autocomplete.css" />
     <Content Include="sitecore modules\EasyAutocomplete\easy-autocomplete.min.css" />
     <Content Include="sitecore modules\EasyAutocomplete\easy-autocomplete.themes.css" />
@@ -250,8 +250,6 @@
     <Content Include="sitecore modules\EasyAutocomplete\maps\easy-autocomplete.themes.min.css.map" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\KeywordsController.cs" />
     <Compile Include="Fields\KeywordHelperField.cs" />
     <Compile Include="Models\Keyword.cs" />

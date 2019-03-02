@@ -8,7 +8,7 @@
             url: function (phrase) {
                 phrase = phrase.replace(/[^a-zA-Z ]/g, "");
                 if (phrase !== "") {
-                    return "/keywords/get/" + phrase;
+                    return "/api/keywords/get/" + phrase;
                 }
                 return null;
             },
@@ -46,7 +46,7 @@
             $el.closest('.scEditorSectionPanel').css('overflow', 'visible');
         },
         popularLabels = function() {
-            jQuery.get('/keywords/getlabels').done(function (response) {
+            jQuery.get('/api/keywords/getlabels').done(function (response) {
                 volumeLabel = response.VolumeLabel;
                 cpcLabel = response.CpcLabel;
                 competitionLabel = response.CompetitionLabel;
@@ -54,7 +54,7 @@
         },
         rankKeyword = function ($el) {
             if ($el.val()) {
-                jQuery.get('/keywords/rank/' + $el.val()).done(function (response) {
+                jQuery.get('/api/keywords/rank/' + $el.val()).done(function (response) {
                     var item = response.Keywords[0];
                     if (item) {
                         var html = '<p style="color:#999; float:left;">&nbsp;&nbsp;' +

@@ -9,7 +9,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Knights.Feature.KeywordFieldHelper.Services
+namespace Knights.Foundation.KeywordFieldHelper.Services
 {
     public static class ServiceCollectionExtensions
     {

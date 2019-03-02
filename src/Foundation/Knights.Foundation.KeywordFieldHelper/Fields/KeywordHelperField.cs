@@ -2,7 +2,7 @@
 using Sitecore.Globalization;
 using Sitecore.Shell.Applications.ContentEditor;
 
-namespace Knights.Feature.KeywordFieldHelper.Fields
+namespace Knights.Foundation.KeywordFieldHelper.Fields
 {
     public class KeywordHelperField : Text
     {

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Knights.Feature.KeywordFieldHelper.Models
+namespace Knights.Foundation.KeywordFieldHelper.Models
 {
     [JsonObject]
     public class KeywordsEverywhereResponseItem

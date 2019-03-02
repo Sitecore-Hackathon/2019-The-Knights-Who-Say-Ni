@@ -29,6 +29,17 @@
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>True</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
+    <PackageName>Knights.Foundation.KeywordFieldHelper.Core</PackageName>
+    <PackageAuthor>Dennis Augustine, Min Jae Kim, Alexander Kay</PackageAuthor>
+    <PackagePublisher>The Knight Who Say Ni!</PackagePublisher>
+    <PackageVersion>1.0.0.0</PackageVersion>
+    <PackageReadme />
+    <SitecoreAssemblyPath>
+    </SitecoreAssemblyPath>
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>True</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>

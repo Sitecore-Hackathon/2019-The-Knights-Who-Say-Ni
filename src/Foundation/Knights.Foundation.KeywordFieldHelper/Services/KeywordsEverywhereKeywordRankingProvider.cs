@@ -4,12 +4,13 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using Knights.Feature.KeywordFieldHelper.Models;
+using Knights.Foundation.KeywordFieldHelper.Models;
 using Newtonsoft.Json;
 using Sitecore;
 using Sitecore.Configuration;
 using Sitecore.Diagnostics;
 
-namespace Knights.Feature.KeywordFieldHelper.Services
+namespace Knights.Foundation.KeywordFieldHelper.Services
 {
     public class KeywordsEverywhereKeywordRankingProvider : IKeywordRankingProvider
     {

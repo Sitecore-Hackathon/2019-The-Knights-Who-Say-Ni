@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Knights.Feature.KeywordFieldHelper.Models;
 using Sitecore.Diagnostics;
 
-namespace Knights.Feature.KeywordFieldHelper.Services
+namespace Knights.Foundation.KeywordFieldHelper.Services
 {
     public class KeywordHelperService : IKeywordHelperService
     {
