@@ -12,6 +12,7 @@ This is a custom text field which provides Sitecore content managers and markete
 
 - Sitecore 9.1
 - You'll require a free Keywords Everywhere API key: https://keywordseverywhere.com/first-install-addon.html
+- We shall require a shubbery... A NICE ONE!
 
 
 ## Installation
