@@ -22,7 +22,7 @@ This is a custom text field which provides Sitecore content managers and markete
 
 ## Configuration
 
-Enter your Keywords Everywhere API key in the "App_Config/Include/Feature/KeywordFieldHelper/Knights.Feature.KeywordFieldHelper.config file.
+Enter your Keywords Everywhere API key in the "App_Config/Include/Foundation/KeywordFieldHelper/Knights.Foundation.KeywordFieldHelper.config file.
 
 ```xml
 
