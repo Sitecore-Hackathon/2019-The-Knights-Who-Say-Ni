@@ -14,7 +14,12 @@ namespace Knights.Feature.KeywordFieldHelper.Controllers
         {
             return new KeywordSuggestions()
             {
-                
+                Keywords = new List<Keyword>()
+                {
+                    new Keyword{ Word = "Ni0", Competion= 1, CPC = 100.00, Rank = 100 },
+                    new Keyword{ Word = "Ni1", Competion= 1, CPC = 100.00, Rank = 100 },
+                    new Keyword{ Word = "Ni2", Competion= 1, CPC = 100.00, Rank = 100 }
+                }
             };
         }
     }
