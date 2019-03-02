@@ -12,8 +12,6 @@ This is a custom text field which provides Sitecore content managers and markete
 
 > #### What do Search Volume, CPC and Competition mean?
 > 
-> (src: https://keywordseverywhere.com)
-> 
 > **Search Volume:** This is an average of the total searches that people have performed for this keyword per month over the last 12 months. For e.g. a search volume of 1000 means that people have searched for this keyword an average of 1000 times every month for the last 12 months.
 > 
 > **CPC:** The cost per click (CPC) is the amount that advertisers are paying for a single click for this keyword in Google adwords.
