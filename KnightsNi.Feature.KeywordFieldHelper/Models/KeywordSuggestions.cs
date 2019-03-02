@@ -7,6 +7,6 @@ namespace Knights.Feature.KeywordFieldHelper.Models
 {
     public class KeywordSuggestions
     {
-        List<Keyword> Keywords { get; set; }
+        public List<Keyword> Keywords { get; set; }
     }
 }
