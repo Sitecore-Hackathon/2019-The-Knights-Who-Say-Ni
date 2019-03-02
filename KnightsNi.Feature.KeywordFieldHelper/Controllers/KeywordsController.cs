@@ -3,7 +3,7 @@ using Knights.Feature.KeywordFieldHelper.Services;
 
 namespace Knights.Feature.KeywordFieldHelper.Controllers
 {
-    public class KeywordsController : ApiController
+    public class KeywordsController : Controller
     {
         #region Fields
 

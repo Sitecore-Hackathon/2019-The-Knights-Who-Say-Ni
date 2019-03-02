@@ -1,11 +1,6 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
+﻿using System.Web.Mvc;
+using System.Web.Routing;
 using Sitecore.Pipelines;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
 
 namespace Knights.Feature.KeywordFieldHelper.Processors
 {
@@ -13,24 +8,19 @@ namespace Knights.Feature.KeywordFieldHelper.Processors
     {
         public void Process(PipelineArgs args)
         {
-            HttpConfiguration config = GlobalConfiguration.Configuration;
-
-            SetRoutes(config);
-            SetSerializerSettings(config);
+            //recommended way to register custom routes within Sitecore.
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
 
-        private void SetRoutes(HttpConfiguration config)
+        public class RouteConfig
         {
-            config.Routes.MapHttpRoute("Keywords", "keywordfieldhelper/keywords", new { action = "Get", controller = "Keywords" });
-            config.Routes.MapHttpRoute("Default route", "keywordfieldhelper/{controller}", new { action = "Get" });
-        }
+            public static void RegisterRoutes(RouteCollection routes)
+            {
+                routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-        private void SetSerializerSettings(HttpConfiguration config)
-        {
-            JsonSerializerSettings settings = new JsonSerializerSettings { ContractResolver = new DefaultContractResolver() };
-            config.Formatters.JsonFormatter.SerializerSettings = settings;
-            config.Formatters.Remove(config.Formatters.XmlFormatter);
-            config.EnsureInitialized();
+                //register MVC/AJAX route(s)
+                routes.MapRoute("Keywords", "KeywordHelper/GetKeywords", new { controller = "Keywords", action = "GetKeywords" });
+            }
         }
     }
 }
