@@ -55,6 +55,24 @@ Enter your Keywords Everywhere API key in the "App_Config/Include/Feature/Keywor
     </settings>
 </sitecore>
 ```
+If you would like implement your own keywords suggestions provider or keywords runking provider, just inherite appropriate interface and change service registration config:
+
+```xml
+
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+    <sitecore>
+        <services>
+
+            <register  serviceType="Knights.Foundation.KeywordFieldHelper.Services.IKeywordSuggestionsProvider, Knights.Foundation.KeywordFieldHelper"
+                      implementationType="Knights.Foundation.KeywordFieldHelper.Services.GoogleKeywordSuggestionsProvider, Knights.Foundation.KeywordFieldHelper" />
+
+            <register serviceType="Knights.Foundation.KeywordFieldHelper.Services.IKeywordRankingProvider, Knights.Foundation.KeywordFieldHelper"
+                      implementationType="Knights.Foundation.KeywordFieldHelper.Services.KeywordsEverywhereKeywordRankingProvider, Knights.Foundation.KeywordFieldHelper" />
+        </services>
+    </sitecore>
+</configuration>
+
+```
 
 ## Usage
 
