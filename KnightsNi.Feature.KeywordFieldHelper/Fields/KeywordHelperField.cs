@@ -26,8 +26,9 @@ namespace Knights.Feature.KeywordFieldHelper.Fields
             this.Attributes["placeholder"] = Translate.Text(this.Placeholder);
 
             string str = this.Password ? " type=\"password\"" : (this.Hidden ? " type=\"hidden\"" : "");
+            var initKeywordsHelperFieldScript = "<script>initKeywordHelperField('#" + ID + "');</script>";
             this.SetWidthAndHeightStyle();
-            output.Write("<input" + this.ControlAttributes + str + "><script>initKeywordHelperField('#"+ID+"');</script>");
+            output.Write("<input" + this.ControlAttributes + str + ">" + initKeywordsHelperFieldScript);
             this.RenderChildren(output);
         }
     }

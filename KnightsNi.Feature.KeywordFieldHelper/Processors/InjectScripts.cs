@@ -1,11 +1,9 @@
-﻿using Sitecore.Diagnostics;
+﻿using System.Web.UI;
+using Sitecore;
+using Sitecore.Configuration;
+using Sitecore.Diagnostics;
 using Sitecore.Pipelines;
 using Sitecore.StringExtensions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 
 namespace Knights.Feature.KeywordFieldHelper.Processors
 {
@@ -24,15 +22,13 @@ namespace Knights.Feature.KeywordFieldHelper.Processors
         {
             Assert.IsNotNullOrEmpty(configKey, "Content Editor resource config key cannot be null");
 
-            string resources = Sitecore.Configuration.Settings.GetSetting(configKey);
+            var resources = Settings.GetSetting(configKey);
 
-            if (String.IsNullOrEmpty(resources))
+            if (string.IsNullOrEmpty(resources))
                 return;
 
             foreach (var resource in resources.Split('|'))
-            {
-                Sitecore.Context.Page.Page.Header.Controls.Add((Control)new LiteralControl(resourceTag.FormatWith(resource)));
-            }
+                Context.Page.Page.Header.Controls.Add(new LiteralControl(resourceTag.FormatWith(resource)));
         }
     }
 }

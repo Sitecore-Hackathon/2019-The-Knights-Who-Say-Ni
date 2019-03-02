@@ -19,9 +19,12 @@ namespace Knights.Feature.KeywordFieldHelper.Processors
                 routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
                 //register MVC/AJAX route(s)
-                routes.MapRoute("Keywords", "Keywords/Get/{id}", new { controller = "Keywords", action = "Get", id = UrlParameter.Optional });
-                routes.MapRoute("KeywordsRanksLabels", "Keywords/GetLabels", new { controller = "Keywords", action = "GetLabels"});
-                routes.MapRoute("KeywordsRank", "Keywords/Rank/{id}", new { controller = "Keywords", action = "Rank", id = UrlParameter.Optional });
+                routes.MapRoute("Keywords", "Keywords/Get/{id}",
+                    new {controller = "Keywords", action = "Get", id = UrlParameter.Optional});
+                routes.MapRoute("KeywordsRanksLabels", "Keywords/GetLabels",
+                    new {controller = "Keywords", action = "GetLabels"});
+                routes.MapRoute("KeywordsRank", "Keywords/Rank/{id}",
+                    new {controller = "Keywords", action = "Rank", id = UrlParameter.Optional});
             }
         }
     }

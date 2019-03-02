@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -49,7 +48,9 @@ namespace Knights.Feature.KeywordFieldHelper.Services
                     if (!string.IsNullOrWhiteSpace(response.Alert))
                         Log.Warn($"Got an alert({response.Alert}) while was ranking '{keyword}'.", this);
 
-                    CopyRankedData(rankedKeyword, response.Data?.SingleOrDefault(x => x.Keyword.Equals(keyword, StringComparison.InvariantCultureIgnoreCase)));
+                    CopyRankedData(rankedKeyword,
+                        response.Data?.SingleOrDefault(x =>
+                            x.Keyword.Equals(keyword, StringComparison.InvariantCultureIgnoreCase)));
                 }
             }
             catch (Exception e)
@@ -96,7 +97,9 @@ namespace Knights.Feature.KeywordFieldHelper.Services
                     foreach (var rankedKeyword in rankedKeywords)
                         CopyRankedData(rankedKeyword,
                             response.Data?.SingleOrDefault(x =>
-                                x.Value.Keyword.Equals(rankedKeyword.Text, StringComparison.InvariantCultureIgnoreCase)).Value);
+                                    x.Value.Keyword.Equals(rankedKeyword.Text,
+                                        StringComparison.InvariantCultureIgnoreCase))
+                                .Value);
                 }
             }
             catch (Exception e)
@@ -106,7 +109,7 @@ namespace Knights.Feature.KeywordFieldHelper.Services
                     e, this);
             }
 
-            return rankedKeywords.OrderByDescending(x=>x.Volume).ToList();
+            return rankedKeywords.OrderByDescending(x => x.Volume).ToList();
         }
 
         #endregion
@@ -131,7 +134,8 @@ namespace Knights.Feature.KeywordFieldHelper.Services
             return keywords.Aggregate(url, (current, keyword) => $"{current}&kw[]={keyword}");
         }
 
-        protected virtual void CopyRankedData([NotNull] RankedKeyword keyword, [NotNull] KeywordsEverywhereResponseItem item)
+        protected virtual void CopyRankedData([NotNull] RankedKeyword keyword,
+            [NotNull] KeywordsEverywhereResponseItem item)
         {
             if (int.TryParse(item.Vol, out var volume)) keyword.Volume = volume;
             keyword.CostPerClick = item.Cpc;
