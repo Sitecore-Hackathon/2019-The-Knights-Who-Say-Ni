@@ -102,6 +102,9 @@
     </BundledProject>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Knights.Foundation.KeywordFieldHelper.Core\Knights.Foundation.KeywordFieldHelper.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\Knights.Foundation.KeywordFieldHelper\Knights.Foundation.KeywordFieldHelper.csproj">
       <Project>{b6e9a820-dbbc-48ef-9f9b-a4afe987fe56}</Project>
       <Name>Knights.Foundation.KeywordFieldHelper</Name>
