@@ -3,24 +3,25 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+using System.Web.Mvc;
 
 namespace Knights.Feature.KeywordFieldHelper.Controllers
 {
-    public class KeywordsController : ApiController
+    public class KeywordsController : Controller
     {
-        public KeywordSuggestions Get()
+      
+        public JsonResult GetKeywords()
         {
-            return new KeywordSuggestions()
+            var keywords = new KeywordSuggestions()
             {
+
                 Keywords = new List<Keyword>()
                 {
-                    new Keyword{ Word = "Ni0", Competion= 1, CPC = 100.00, Rank = 100 },
-                    new Keyword{ Word = "Ni1", Competion= 1, CPC = 100.00, Rank = 100 },
-                    new Keyword{ Word = "Ni2", Competion= 1, CPC = 100.00, Rank = 100 }
+                    
                 }
             };
+
+            return new JsonResult() { Data = keywords, JsonRequestBehavior= JsonRequestBehavior.AllowGet };
         }
     }
 }
