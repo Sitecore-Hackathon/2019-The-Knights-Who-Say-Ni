@@ -1,51 +1,39 @@
-# Documentation
+# Keyword Helper Field for Sitecore  #
 
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
+![Hackathon Logo](images/we-are-the-knights-who-say-ni.png?raw=true "We are the Knight Who Say NI!")
 
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
-
-## Summary
+## Summary ##
 
 **Category:**  Best enhancement to the Sitecore Admin (XP) UI for Content Editors & Marketers
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+This is a custom text field which provides Sitecore content managers and marketers with dynamic title and keyword suggestions along with insight into the Search Volume, Cost Per Cick (CPC) and Competiton for each suggested term  using free services by Google and keywordseverywhere.com so that they may be better able to optimize their content for SEO and ad campaign performance.
 
 ## Pre-requisites
 
-Does your module rely on other Sitecore modules or frameworks?
+- Sitecore 9.1
+- You'll require a free Keywords Everywhere API key: https://keywordseverywhere.com/first-install-addon.html
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
 
 ## Installation
 
 Provide detailed instructions on how to install the module, and include screenshots where necessary.
 
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
+1. Use the Sitecore Installation wizard to install the [KeywordFieldHelper package](#link-to-package)
+
 
 ## Configuration
 
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
-
-Remember you are using Markdown, you can provide code samples too:
+Enter your Keywords Everywhere API key in the "App_Config/Include/Feature/KeywordFieldHelper/Knights.Feature.KeywordFieldHelper.config file.
 
 ```xml
-<?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
+
+<sitecore>
+    <settings>...
+   
+        <!-- You can get free API key here: https://keywordseverywhere.com/first-install-addon.html -->
+        <setting name="KeywordsEverywhere.Api.Key" value="[YOUR_KEY_GOES_HERE]" />
     </settings>
-  </sitecore>
-</configuration>
+</sitecore>
 ```
 
 ## Usage
@@ -54,15 +42,6 @@ Provide documentation  about your module, how do the users use your module, wher
 
 Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
 
 ## Video
 
