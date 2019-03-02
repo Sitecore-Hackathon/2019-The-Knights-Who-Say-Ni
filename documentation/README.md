@@ -79,7 +79,7 @@ If you would like implement your own keywords suggestions provider or keywords r
 
 2. Configure API key (see **Configuration Section**)
 
-3. We suggest you create a base template with Page Metadata fields such as Page Title, Page Description, and inherit this template to use across all your pages. **Keyword Helper Text** is a custom Simple Type and a perfect candidate for a Page Title field. **It brings the power of SEO relevant keywords right to the Sitecore Content Editor.**
+3. We suggest you create a base template with Page Metadata fields such as Page Title, Page Description, and inherit this template to use across all your pages. **Keyword Helper Text** is a custom Simple Type and a perfect candidate for a Page Title field. **It brings the power of SEO relevant keywords to the Sitecore Content Editor.**
 
 ![Hackathon Logo](images/template.png?raw=true "Template with Keyword Helper Text field type")
 
