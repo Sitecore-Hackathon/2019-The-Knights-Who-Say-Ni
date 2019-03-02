@@ -14,9 +14,9 @@ created: 20190302T084423Z
 field: {0F0A5388-0467-4A45-95C0-729B1D6DB9FD}
 name: Control
 key: control
-content-length: 21
+content-length: 26
 
-content:KeywordHelper
+knights:KeywordHelperField
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -135,7 +135,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: dcf3df1f-ac54-4076-bf5c-7bc45e5f9f67
+revision: 6ccc8e0f-002b-4951-98d3-81a7300746c0
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -164,14 +164,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dcf3df1f-ac54-4076-bf5c-7bc45e5f9f67
+6ccc8e0f-002b-4951-98d3-81a7300746c0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190302T084441Z
+20190302T125340Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
