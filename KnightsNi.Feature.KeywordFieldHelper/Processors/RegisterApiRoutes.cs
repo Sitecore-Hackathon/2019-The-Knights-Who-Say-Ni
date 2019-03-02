@@ -19,7 +19,7 @@ namespace Knights.Feature.KeywordFieldHelper.Processors
                 routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
                 //register MVC/AJAX route(s)
-                routes.MapRoute("Keywords", "KeywordHelper/GetKeywords", new { controller = "Keywords", action = "GetKeywords" });
+                routes.MapRoute("Keywords", "KeywordHelper/Get", new { controller = "Keywords", action = "Get" });
             }
         }
     }
