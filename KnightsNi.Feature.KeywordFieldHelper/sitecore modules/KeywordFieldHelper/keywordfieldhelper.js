@@ -1,18 +1,28 @@
 ﻿
 (function ($) {
     $(document).ready(function () {
-            var options = {
-                url: "/example.json",
-
-                getValue: "name",
-
-                list: {
-                    match: {
-                        enabled: true
-                    }
+        var options = {
+            url: function (phrase) {
+                if (phrase !== "") {
+                    return "/Keywords/Get/" + phrase;
+                } else {
+                    //duckduckgo doesn't support empty strings
+                    return "/Keywords/Get/";
                 }
-            };
+            },
 
-            $("input.scContentControl").easyAutocomplete(options);
+            getValue: "Text",
+
+            list: {
+                match: {
+                    enabled: true
+                }
+            },
+
+            requestDelay: 300,
+
+        };
+
+        $("input.scContentControl").easyAutocomplete(options);
     });
 })(jQuery);
