@@ -54,7 +54,7 @@ Enter your Keywords Everywhere API key in the "App_Config/Include/Foundation/Key
     </settings>
 </sitecore>
 ```
-If you would like implement your own keywords suggestions provider or keywords runking provider, just inherite appropriate interface and change service registration config:
+If you would like implement your own keywords suggestions provider or keywords ranking provider, just inherit the appropriate interface and change service registration config:
 
 ```xml
 
