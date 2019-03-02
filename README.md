@@ -23,4 +23,6 @@ This is a custom text field which provides Sitecore content managers and markete
 
 #### [Check out the Installation and Usage Instructions Here](https://github.com/Sitecore-Hackathon/2019-The-Knights-Who-Say-Ni/tree/master/documentation)
 
+[![Keyword Field Helper](https://img.youtube.com/vi/wESrRfs8H_Q/0.jpg)](https://www.youtube.com/watch?v=wESrRfs8H_Q)
+
 #### [YouTube Video](http://youtube.com)
