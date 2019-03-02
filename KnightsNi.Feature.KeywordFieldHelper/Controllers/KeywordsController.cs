@@ -1,9 +1,10 @@
-﻿using System.Web.Http;
+﻿using System.Web.Mvc;
 using Knights.Feature.KeywordFieldHelper.Services;
+using Sitecore.Mvc.Controllers;
 
 namespace Knights.Feature.KeywordFieldHelper.Controllers
 {
-    public class KeywordsController : Controller
+    public class KeywordsController: SitecoreController
     {
         #region Fields
 
@@ -22,10 +23,10 @@ namespace Knights.Feature.KeywordFieldHelper.Controllers
 
         #region Actions
 
-        //public IHttpActionResult Get(string keyword)
-        //{
-        //    return Json(null, JsonRequestBehavior.AllowGet)
-        //}
+        public ActionResult Get(string keyword)
+        {
+            return Json(_keywordHelperService.GetRankedSuggestions(keyword), JsonRequestBehavior.AllowGet);
+        }
 
         #endregion
     }
