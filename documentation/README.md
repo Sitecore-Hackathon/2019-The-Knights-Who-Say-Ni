@@ -99,3 +99,7 @@ If you would like implement your own keywords suggestions provider or keywords r
 Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
 
 [![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
+
+## Acknowledgment
+We benefited from Kamruz Jaman's blog post (jammykam): https://www.google.com/amp/s/jammykam.wordpress.com/2014/04/24/adding-custom-javascript-and-stylesheets-in-the-content-editor/amp/
+Thanks for this awesome blog post!
