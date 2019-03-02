@@ -49,7 +49,7 @@ namespace Knights.Feature.KeywordFieldHelper.Services
                     if (!string.IsNullOrWhiteSpace(response.Alert))
                         Log.Warn($"Got an alert({response.Alert}) while was ranking '{keyword}'.", this);
 
-                    CopyRankedData(rankedKeyword, response.Data?.SingleOrDefault(x => x.Value.Keyword.Equals(keyword, StringComparison.InvariantCultureIgnoreCase)).Value);
+                    CopyRankedData(rankedKeyword, response.Data?.SingleOrDefault(x => x.Keyword.Equals(keyword, StringComparison.InvariantCultureIgnoreCase)));
                 }
             }
             catch (Exception e)
@@ -79,7 +79,7 @@ namespace Knights.Feature.KeywordFieldHelper.Services
                         return rankedKeywords;
                     }
 
-                    var response = JsonConvert.DeserializeObject<KeywordsEverywhereResponse>(jsonString);
+                    var response = JsonConvert.DeserializeObject<KeywordsEverywhereBatchResponse>(jsonString);
 
                     if (response == null || !string.IsNullOrWhiteSpace(response.Error))
                     {

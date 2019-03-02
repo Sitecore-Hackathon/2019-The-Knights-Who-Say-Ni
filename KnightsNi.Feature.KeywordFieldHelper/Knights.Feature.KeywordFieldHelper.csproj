@@ -247,7 +247,9 @@
     <Compile Include="Controllers\KeywordsController.cs" />
     <Compile Include="Fields\KeywordHelperField.cs" />
     <Compile Include="Models\Keyword.cs" />
+    <Compile Include="Models\KeywordsEverywhereBatchResponse.cs" />
     <Compile Include="Models\KeywordsEverywhereResponse.cs" />
+    <Compile Include="Models\KeywordsEverywhereResponseBase.cs" />
     <Compile Include="Models\KeywordsEverywhereResponseItem.cs" />
     <Compile Include="Models\KeywordsResponseViewModel.cs" />
     <Compile Include="Models\RankedKeyword.cs" />

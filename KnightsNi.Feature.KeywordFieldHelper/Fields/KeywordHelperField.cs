@@ -1,4 +1,6 @@
-﻿using Sitecore.Shell.Applications.ContentEditor;
+﻿using System.Web.UI;
+using Sitecore.Globalization;
+using Sitecore.Shell.Applications.ContentEditor;
 
 namespace Knights.Feature.KeywordFieldHelper.Fields
 {
@@ -18,5 +20,15 @@ namespace Knights.Feature.KeywordFieldHelper.Fields
         }
 
         #endregion
+
+        protected override void DoRender(HtmlTextWriter output)
+        {
+            this.Attributes["placeholder"] = Translate.Text(this.Placeholder);
+
+            string str = this.Password ? " type=\"password\"" : (this.Hidden ? " type=\"hidden\"" : "");
+            this.SetWidthAndHeightStyle();
+            output.Write("<input" + this.ControlAttributes + str + "><script>initKeywordHelperField('#"+ID+"');</script>");
+            this.RenderChildren(output);
+        }
     }
 }
