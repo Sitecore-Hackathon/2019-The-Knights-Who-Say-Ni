@@ -80,6 +80,19 @@ Provide documentation  about your module, how do the users use your module, wher
 
 Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
 
+1. First you need to go to Sitecore Update Wizard and install the package.
+
+2. Configure API key (see **Configuration Section**)
+
+3. We suggest to create a base template with Page Metadata fields such as Page Title, Page Description and inherite this template to use across all your pages. **Keyword Helper Text** is a custom Simple Type and a perfect candidate for a Page Title field. It brings the power of SEO relevant keywords right to the Sitecore Content Editor.
+![Hackathon Logo](images/template.png?raw=true "Template with Keyword Helper Text field type")
+
+4. Once you start entering the text, **Keyword Helper** will suggest you with relevant keywords ranked by volume of monthly requests, costs per click and competition value;
+![Hackathon Logo](images/suggestions.png?raw=true "Keyword Helper Text showing suggestions")
+
+5. If you are not editing the field, it's going to show you ranking information for the current value.
+![Hackathon Logo](images/ranking.png?raw=true "Keyword Helper Text showing suggestions")
+
 
 ## Video
 
