@@ -18,7 +18,7 @@ This is a custom text field which provides Sitecore content managers and markete
 
 Provide detailed instructions on how to install the module, and include screenshots where necessary.
 
-1. Use the Sitecore Installation Wizard to install the [KeywordFieldHelper package](https://github.com/Sitecore-Hackathon/2019-The-Knights-Who-Say-Ni/blob/master/sc.package/Knights.Foundation.KeywordFieldHelper.Master.update)
+1. Use the Sitecore Installation Wizard to install the [KeywordFieldHelper package]:https://github.com/Sitecore-Hackathon/2019-The-Knights-Who-Say-Ni/blob/master/sc.package/Knights.Foundation.KeywordFieldHelper.Master.update
 
 
 ## Configuration
