@@ -23,9 +23,9 @@ namespace Knights.Feature.KeywordFieldHelper.Controllers
 
         #region Actions
 
-        public ActionResult Get(string keyword)
+        public ActionResult Get(string id)
         {
-            return Json(_keywordHelperService.GetRankedSuggestions(keyword), JsonRequestBehavior.AllowGet);
+            return Json(_keywordHelperService.GetRankedSuggestions(id), JsonRequestBehavior.AllowGet);
         }
 
         #endregion
