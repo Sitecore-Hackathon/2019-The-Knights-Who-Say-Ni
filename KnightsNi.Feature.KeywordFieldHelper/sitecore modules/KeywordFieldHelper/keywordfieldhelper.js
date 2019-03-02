@@ -6,8 +6,8 @@
         competitionLabel = 'competition',
         options = {
             url: function (phrase) {
+                phrase = phrase.replace(/[^a-zA-Z ]/g, "");
                 if (phrase !== "") {
-                    phrase = phrase.replace(/[^a-zA-Z ]/g, "");
                     return "/keywords/get/" + phrase;
                 }
                 return null;
