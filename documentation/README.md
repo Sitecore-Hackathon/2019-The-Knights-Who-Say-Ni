@@ -1,4 +1,4 @@
-# Keyword Helper Field for Sitecore  #
+# Keyword Helper Field for Sitecore. Allows to see suggested keywords with search volume, CPC & competition data #
 
 ![Hackathon Logo](images/we-are-the-knights-who-say-ni.png?raw=true "We are the Knight Who Say NI!")
 
