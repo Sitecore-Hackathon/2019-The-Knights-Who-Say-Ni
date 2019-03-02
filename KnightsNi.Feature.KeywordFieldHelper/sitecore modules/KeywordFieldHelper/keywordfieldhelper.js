@@ -90,8 +90,10 @@
 
 function initKeywordHelperField(el) {
 
-    var $element = jQuery(el);
+    console.log('element', el);
 
+    var $element = jQuery(el);
+    $element.closest('.scEditorSectionPanel').css('overflow', 'visible');
     var volumeLabel = 'volume',
         cpcLabel = 'cpc',
         competitionLabel = 'competition',
@@ -111,6 +113,7 @@ function initKeywordHelperField(el) {
     var options = {
         url: function (phrase) {
             if (phrase !== "") {
+                phrase = phrase.replace(/[^a-zA-Z ]/g, "");
                 return "/keywords/get/" + phrase;
             }
             return null;
@@ -120,9 +123,12 @@ function initKeywordHelperField(el) {
         list: {
             match: {
                 enabled: true
-            },
-            onShowListEvent: function () {
-                console.log('onLoadEvent', args);
+            }//,
+            //onShowListEvent: function () {
+               // console.log('onLoadEvent', args);
+            //}
+            , onSelectItemEvent: function(e) {
+                console.log('selected', e);
             }
         },
         adjustWidth: false,
