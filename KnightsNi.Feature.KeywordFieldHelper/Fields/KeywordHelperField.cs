@@ -1,17 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Sitecore.Shell.Applications.ContentEditor;
 
 namespace Knights.Feature.KeywordFieldHelper.Fields
 {
-    public class KeywordHelperField : Sitecore.Shell.Applications.ContentEditor.Text
+    public class KeywordHelperField : Text
     {
+        #region Constants
+
+        public const string CLASS_NAME = "keyword-helper-field";
+
+        #endregion
+
+        #region Ctors
 
         public KeywordHelperField()
         {
-            Class = "scContentControl keyword-helper";
+            Class += " " + CLASS_NAME;
         }
 
+        #endregion
     }
 }
