@@ -12,13 +12,12 @@
     <UseWebConfigReplacement>false</UseWebConfigReplacement>
     <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
     <LegacyFileReplacement>false</LegacyFileReplacement>
-    <SourceWebPhysicalPath>..\KnightsNi.Feature.KeywordFieldHelper</SourceWebPhysicalPath>
-    <SourceWebProject>{b6e9a820-dbbc-48ef-9f9b-a4afe987fe56}|KnightsNi.Feature.KeywordFieldHelper\Knights.Feature.KeywordFieldHelper.csproj</SourceWebProject>
-    <SourceWebVirtualPath>/Knights.Feature.KeywordFieldHelper.csproj</SourceWebVirtualPath>
     <SitecoreDatabase>core</SitecoreDatabase>
     <AssemblyName>Knights.Foundation.KeywordFieldHelper.core</AssemblyName>
     <Name>Knights.Foundation.KeywordFieldHelper.Core</Name>
     <RootNamespace>Knights.Foundation.KeywordFieldHelper.core</RootNamespace>
+    <ManageRoles>False</ManageRoles>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
