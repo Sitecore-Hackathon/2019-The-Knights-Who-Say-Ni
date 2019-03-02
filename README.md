@@ -18,6 +18,6 @@ This is a custom text field which provides Sitecore content managers and markete
 > 
 > **Competition:** The competition is a gauge of the number of advertisers that are running ads on Google adwords for this specific keyword. The number goes from 0 to 1, with lower values signifying less number of advertisers and higher values signifying more advertisers.
 
-#### [Check out the Installation and Usage Instructions Here](documentation/README.md")
+#### [Check out the Installation and Usage Instructions Here](documentation")
 
 #### [YouTube Video](http://youtube.com)
