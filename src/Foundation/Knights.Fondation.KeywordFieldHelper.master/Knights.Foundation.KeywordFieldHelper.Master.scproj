@@ -20,7 +20,7 @@
     <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
     <LegacyFileReplacement>false</LegacyFileReplacement>
     <AssemblyName>Knights.Fondation.KeywordFieldHelper.master</AssemblyName>
-    <Name>Knights.Fondation.KeywordFieldHelper.master</Name>
+    <Name>Knights.Foundation.KeywordFieldHelper.Master</Name>
     <RootNamespace>Knights.Fondation.KeywordFieldHelper.master</RootNamespace>
     <EnableCodeGeneration>False</EnableCodeGeneration>
     <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>

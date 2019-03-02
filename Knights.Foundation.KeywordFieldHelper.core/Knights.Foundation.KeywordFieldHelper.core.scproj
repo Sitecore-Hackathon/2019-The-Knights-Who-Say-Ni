@@ -17,7 +17,7 @@
     <SourceWebVirtualPath>/Knights.Feature.KeywordFieldHelper.csproj</SourceWebVirtualPath>
     <SitecoreDatabase>core</SitecoreDatabase>
     <AssemblyName>Knights.Foundation.KeywordFieldHelper.core</AssemblyName>
-    <Name>Knights.Foundation.KeywordFieldHelper.core</Name>
+    <Name>Knights.Foundation.KeywordFieldHelper.Core</Name>
     <RootNamespace>Knights.Foundation.KeywordFieldHelper.core</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
